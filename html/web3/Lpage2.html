@@ -1,0 +1,163 @@
+<!Doctype html>
+<html lang en>
+    <head>
+        <title>Landing Page</title>
+        <link rel="shortcut icon" type="image/x-icon" href="Imgs\yellowlogo_kAN_icon.ico"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel= "stylesheet" type="text/css" href="Lpage.css">
+        <link href="https://fonts.googleapis.com/css?family=Bitter|Raleway|Ranga&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Open+Sans+Condensed:300|Pacifico|Patua+One&display=swap" 
+        rel="stylesheet">
+    </head>
+
+    <body>
+        <div class= "menu">
+                <a id="tab1"     class="tabs" href="About.html">About</a>
+                <a id="tab2"     class="tabs" href="join.html">Join</a>
+                <a id="tab3"     class="tabs" href="share.html">Share</a>
+            <!--<a id="tab4"     class="tabs" href="google.com">Tab 4</a>-->
+                <a id="contact"  class="tabs" href="contact.html">Contact Us</a>
+        </div>
+        <div class="pics">
+            <a id="logo" href="Lpage2.html">
+                <img  src="https://www.freelogodesign.org/Content/img/logo-ex-2.png" alt="logo"
+                style="width:200px; height:200px;">
+            </a>
+            <a id="fb" href="https://www.facebook.com/">
+                <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_black-512.png"
+                alt="facebook" style="width:55px;height:55px;">
+            </a>
+            <a id="snap" href="https://www.snapchat.com/">
+                <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_snapchat-512.png"
+                alt="snapchat" style="width:50px;height:50px;">
+            </a>
+            <a id="insta" href="https://www.instagram.com/">
+                <img id="insta" src="http://www.transparentpng.com/thumb/logo-instagram/ERHHfn-png-logo-instagram-black.png"
+                alt="instagram" style="width:70px; height:55px">
+            </a>
+            <a id="twit" href="https://twitter.com/">
+                <img src="http://www.globalnerdy.com/wp-content/uploads/2017/03/twitter-icon.png"
+                alt= "twitter" style="width:56px; height: 56px">
+            </a>
+        </div>
+
+        <div class="motto">
+             <h1>This is a Motto</h1>
+             <p>This is a brief description about the company <br>
+                This is a sentence about the company. <br> 
+                This is another sentence about the company, <br>
+                and this is another sentence about the company <br>
+                Want to join this company today?</p>
+                <div class="email">
+                    <form method="post" action="" style="text-align:center">
+                      <!--  <input type="email" id="join" name="email" placeholder="Enter Your Email">-->
+                        <input type="button" id="button" onclick="window.location.href = 'join.html';" value="JOIN"/>
+                    <!--<button id="butt" onclick="window.location.href = 'C:\Users\rkspo\SaisitaCode\html\web3\join.html'">JOIN</button>*/-->
+                    </form>
+                </div>
+        </div>
+        <div>
+            <img id="fam" src="http://www.clker.com/cliparts/J/A/O/q/b/0/family-fun-hi.png" alt="picture"
+            style="width: 600px; height: 500px;">
+        </div>
+        <div class="yellowdivider">
+         <div class="circle1">
+            <img id="circle1" src="https://cdn.pixabay.com/photo/2013/07/13/11/48/abstract-158691_640.png" 
+            alt="circle" style="width:100px;height:100px;">
+         </div>   
+         <div class="circle2">
+            <img id="circle2" src="https://cdn.pixabay.com/photo/2013/07/13/11/48/abstract-158691_640.png" 
+            alt="circle" style="width:50px;height:50px;">
+         </div>
+         <div class="square2">
+            <img id="square2" src="Imgs\square.png" 
+            alt="square" style="width:100px;height:100px;">
+         </div>
+         <div class="square3">
+            <img id="square3" src="Imgs\square.png" 
+            alt="square" style="width:200px;height:200px;">
+         </div>
+         <div class="circle3">
+            <img id="circle3" src="https://cdn.pixabay.com/photo/2013/07/13/11/48/abstract-158691_640.png" 
+            alt="circle" style="width:100px;height:100px;">
+         </div>
+         <!--image slider-->
+         <div class="slideshow-container" *>
+            <div class="imgs fade">
+                <img id="one" src= "Imgs\img1.png"
+                 style="padding-left:120px;    width: 668px;
+                 height: 569px;">
+            </div>
+            <div class="imgs fade">
+                <img id="two" src= "Imgs\img2.png" 
+                style="padding-left:120px;    width: 668px;
+                height: 569px;">
+            </div>
+            <div class="imgs fade">
+                <img id="three" src= "Imgs\img3.png"
+                style="padding-left:120px;    width: 668px;
+                height: 569px;">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  <br>
+<!-- The dots/circles -->
+<div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+            </div>
+        </div>
+        <!-- Next and previous buttons -->
+        <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("imgs");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1} 
+                    slides[slideIndex-1].style.display = "block"; 
+                    dots[slideIndex-1].className += " active";
+                    setTimeout(showSlides, 5000); // Change image every 5 seconds
+                }
+                </script>
+     <div class="shapes">
+        <h1 id="header2">This is a Small Motto</h1>
+        <p id="para2">This is another sentence. <br>
+            This is another sentence. <br>
+            This is one more sentence. <br>
+            This is the last sentence. <br>
+        </p>
+     </div>
+     <div class="tree">
+        <img src="Imgs\tree.png"
+        alt="tree" style="width:500px; height:600px;">
+     </div>
+
+     <div class="footer">
+         <div class="words">
+                © 2019 Saisita Maddirala. All rights reserved.
+         </div>
+     </div>
+    </body>
+</html>

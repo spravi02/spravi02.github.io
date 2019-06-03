@@ -1,0 +1,88 @@
+.pics a:link{text-decoration: none;}
+.pics a:visited{text-decoration: none;}
+#logo{
+    float:left; 
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+#fb{margin-top:8px; margin-right:20px;}
+#fb:hover{opacity:.45;cursor:pointer}
+#snap{margin-top:8px; margin-right:20px;}
+#snap:hover{opacity:.45;cursor:pointer;}
+#insta{padding-top:5px; padding-right:10px;}
+#insta:hover{opacity:.45;cursor:pointer;}
+#twit{margin-top:10px; padding-right:20px;}
+#twit:hover{opacity:.45; cursor:pointer;}
+#tab1:hover, #tab2:hover, #tab3:hover, #tab4:hover, #contact:hover{color: #ffc400;}
+#butt:hover{background-color: #585555;}
+
+.menu{
+    float:right;
+    margin-right: 50px;
+    margin-top: 10px;
+    position: relative;
+    text-align: right;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+}
+ .menu a:link{text-decoration: none;}
+ .menu a:visited{text-decoration: none;}
+ .menu a:hover{text-decoration-color: #615d5d;}
+ .menu a:active{text-decoration-color: #615d5d;}
+#tab1{color:black; padding-right:30px;}
+#tab2{color:black; padding-right:30px;}
+#tab3{color:black; padding-right:30px;}
+#tab4{color:black; padding-right:30px;}
+#contact{color:black; padding-right:20px;}
+.email{
+    padding-top: 0px;
+    float:left;
+}
+#join{padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 60px;
+     background-color: rgb(231, 228, 228); border-radius: 7px;border-color:#585555;
+      outline-color: #585555; font-family: 'Alegreya Sans', sans-serif; font-size: 20px;}
+button{font-size: 25px; color: white; font-weight: bold; padding-top:17px; padding-bottom: 17px; 
+    padding-left: 40px; font-family: 'Alegreya Sans', sans-serif; padding-right: 40px; 
+    cursor:pointer; background-color: #111010; border-radius: 7px;border:none;}
+
+.title{font-size:50px;font-family:'Raleway',sans-serif;
+       margin-right:684px;text-align:center; font-weight:bold;
+       float:left; margin-top:-53px;
+       overflow: hidden; /* Ensures the content is not revealed until the animation */
+       white-space: nowrap; /* Keeps the content on a single line */
+       /*margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+       letter-spacing: .15em; /* Adjust as needed */
+       animation: typing 5.0s steps(40) infinite,
+       blink-caret .90s step-end infinite;
+    }
+.body{
+    border-color: solid #ffc400;
+    background-color: #ffc400;
+    padding: 30px 30px 30px 50px;
+    border-radius: 50px;
+    font-size: 27px;
+    font-family: 'Bitter',serif;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top:144px;
+}
+.footer{background-color: #ffc400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 90px;
+    margin-left: -8px;
+    margin-right: -8px;}
+.words{color:black; font-size: 15px; margin-left: 56px;}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 29%; }
+  }
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: #ffc400 }
+    50% { border-color: #ffc400; }
+    }
+
